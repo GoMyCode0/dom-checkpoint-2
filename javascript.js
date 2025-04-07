@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const colorBox = document.getElementById("color-box");
     const changeColorBtn = document.getElementById("change-color-btn");
   
+    //*this is the color square
     function getRandomColor() {
       const letters = "0123456789ABCDEF";
       let color = "#";
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       return color;
     }
-  
+  //*this is for the button
     changeColorBtn.addEventListener("click", () => {
       const newColor = getRandomColor();
       colorBox.style.backgroundColor = newColor;
